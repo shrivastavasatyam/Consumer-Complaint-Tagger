@@ -1,0 +1,18 @@
+{
+    "Incorrect information on your report": 0,
+    "Problem when making payments": 1,
+    "Getting a credit card": 2,
+    "Problem with a company's investigation into an existing problem": 3,
+    "Attempts to collect debt not owed": 4,
+    "Managing an account": 5,
+    "Improper use of your report": 6,
+    "Problem with a purchase shown on your statement": 7,
+    "False statements or representation": 8,
+    "Dealing with your lender or servicer": 9,
+    "Written notification about debt": 10,
+    "Trouble during payment process": 11,
+    "Fees or interest": 12,
+    "Problem with a lender or other company charging your account": 13,
+    "Took or threatened to take negative or legal action": 14,
+    "Other features, terms, or problems": 15
+}

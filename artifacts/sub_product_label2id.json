@@ -1,0 +1,17 @@
+{
+    "Credit reporting": 0,
+    "Store credit card": 1,
+    "General-purpose credit card or charge card": 2,
+    "Credit card debt": 3,
+    "Checking account": 4,
+    "Other personal consumer report": 5,
+    "Auto debt": 6,
+    "Federal student loan servicing": 7,
+    "Other debt": 8,
+    "Telecommunications debt": 9,
+    "Medical debt": 10,
+    "Conventional home mortgage": 11,
+    "Other banking product or service": 12,
+    "Rental debt": 13,
+    "Savings account": 14
+}

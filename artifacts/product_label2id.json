@@ -1,0 +1,7 @@
+{
+    "Credit Reporting": 0,
+    "Credit card": 1,
+    "Debt collection": 2,
+    "Checking/savings account": 3,
+    "Loans / Mortgage": 4
+}
