@@ -57,10 +57,10 @@ complaintTag/
 
 The following models have been trained and are available on Hugging Face for direct use:
 
-- [QuirkyTurtle/cfpb_product_complaint_classifier](https://huggingface.co/QuirkyTurtle/cfpb_product_complaint_classifier)
-- [QuirkyTurtle/cfpb_sub_product_complaint_classifier](https://huggingface.co/QuirkyTurtle/cfpb_sub_product_complaint_classifier)
-- [QuirkyTurtle/cfpb_issue_complaint_classifier](https://huggingface.co/QuirkyTurtle/cfpb_issue_complaint_classifier)
-- [QuirkyTurtle/cfpb_sub_issue_complaint_classifier](https://huggingface.co/QuirkyTurtle/cfpb_sub_issue_complaint_classifier)
+- [harshan1823/cfpb_product_complaint_classifier](https://huggingface.co/QuirkyTurtle/cfpb_product_complaint_classifier)
+- [harshan1823/cfpb_sub_product_complaint_classifier](https://huggingface.co/QuirkyTurtle/cfpb_sub_product_complaint_classifier)
+- [harshan1823/cfpb_issue_complaint_classifier](https://huggingface.co/QuirkyTurtle/cfpb_issue_complaint_classifier)
+- [harshan1823/cfpb_sub_issue_complaint_classifier](https://huggingface.co/QuirkyTurtle/cfpb_sub_issue_complaint_classifier)
 
 ### Example: How to Load the Model and Tokenizer
 
@@ -70,7 +70,7 @@ You can load any of these models and their tokenizers using the `transformers` l
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
 # Specify the model you want to use
-model_name = "QuirkyTurtle/cfpb_product_complaint_classifier"
+model_name = "harshan1823/cfpb_product_complaint_classifier"
 
 # Load the pre-trained model
 model = AutoModelForSequenceClassification.from_pretrained(model_name)
