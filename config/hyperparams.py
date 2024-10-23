@@ -1,0 +1,7 @@
+MODEL_NAME = 'distilbert-base-uncased'
+COLUMN = 'ISSUE'
+OUTPUT_DIR = f'Trainer_{COLUMN}_{MODEL_NAME}'
+BATCH_SIZE = 16
+NUM_EPOCHS = 3
+LEARNING_RATE = 5e-5
+TOKENIZER_NAME = None

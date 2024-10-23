@@ -167,3 +167,10 @@ complaint_tag/
 
 # Data Store
 data_store/
+model_store/
+saved_trainer/
+issue_1_checkpoint/
+product_1_checkpoint/
+sub_product_1_checkpoint/
+subissue_1_checkpoint/
+notebooks/
