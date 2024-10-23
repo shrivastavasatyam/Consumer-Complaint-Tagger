@@ -14,6 +14,7 @@ This project provides a system to classify consumer complaints related to variou
 
 - [Features](#features)
 - [Folder Structure](#folder-structure)
+- [Loading Pre-Trained Models and Tokenizers](#loading-pre-trained-models-and-tokenizers)
 - [Running the Streamlit Application](#running-the-streamlit-application)
 - [Training a Custom Model](#training-a-custom-model)
 - [Environment Setup](#environment-setup)
@@ -25,6 +26,8 @@ This project provides a system to classify consumer complaints related to variou
 - Use pre-trained transformer models for classification.
 - Train custom models on your own datasets.
 - Display classification results with probabilities via an interactive Streamlit application.
+
+
 
 ## Folder Structure
 
@@ -48,6 +51,41 @@ complaintTag/
 ├── .env                          # Environment variable configuration (model paths, etc.)
 ├── requirements.txt              # Dependencies for the project
 └── README.md                     # Project documentation
+```
+
+## Loading Pre-Trained Models and Tokenizers
+
+The following models have been trained and are available on Hugging Face for direct use:
+
+- [QuirkyTurtle/cfpb_product_complaint_classifier](https://huggingface.co/QuirkyTurtle/cfpb_product_complaint_classifier)
+- [QuirkyTurtle/cfpb_sub_product_complaint_classifier](https://huggingface.co/QuirkyTurtle/cfpb_sub_product_complaint_classifier)
+- [QuirkyTurtle/cfpb_issue_complaint_classifier](https://huggingface.co/QuirkyTurtle/cfpb_issue_complaint_classifier)
+- [QuirkyTurtle/cfpb_sub_issue_complaint_classifier](https://huggingface.co/QuirkyTurtle/cfpb_sub_issue_complaint_classifier)
+
+### Example: How to Load the Model and Tokenizer
+
+You can load any of these models and their tokenizers using the `transformers` library from Hugging Face. Here's an example of how to do this:
+
+```python
+from transformers import AutoModelForSequenceClassification, AutoTokenizer
+
+# Specify the model you want to use
+model_name = "QuirkyTurtle/cfpb_product_complaint_classifier"
+
+# Load the pre-trained model
+model = AutoModelForSequenceClassification.from_pretrained(model_name)
+
+# Load the tokenizer
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+# Example usage: tokenize a sample complaint and get predictions
+text = "Sample consumer complaint text"
+inputs = tokenizer(text, return_tensors="pt")
+outputs = model(**inputs)
+
+# Get the logits (model predictions)
+logits = outputs.logits
+print(logits)
 ```
 
 ## Running the Streamlit Application
@@ -166,6 +204,8 @@ To replicate this project on your machine, follow these steps:
 2. **Set up your environment variables**:
 
    Use a `.env` file to specify paths for your pre-trained models (as described above).
+
+
 
 ## How to Contribute
 
