@@ -1,8 +1,4 @@
-# complaintTag
-
-
-
-# ComplaintTag Classification System
+# Consumer Complaint Tagger
 
 Consumers often encounter challenges with financial products and services, leading to unresolved complaints with financial institutions. The Consumer Financial Protection Bureau (CFPB) serves as a mediator in these cases, but accurately categorizing complaints can be difficult for consumers, causing delays in the resolution process.
 
